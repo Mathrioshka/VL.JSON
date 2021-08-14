@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Tfq6w0sAa0LL5il6HL1fXd" LanguageVersion="2021.3.3.131" Version="0.128">
+  <NugetDependency Id="OUZnQt4PmwkPhULr7Q81Ko" Location="VL.CoreLib" Version="2021.3.3" />
+  <Patch Id="HcIvXw4VPcnOdmCK9mA6D3">
+    <Canvas Id="UZ6mTqORQqDP9JnelBAb8y" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="FjDXgzBO9KjQUH4xryztP9">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="JubgJWoozwjLDcNAnC0JNm">
+        <Canvas Id="U9cngumtNFnMDEjMPOAnnv" CanvasType="Group">
+          <Pad Id="UDprC2tcLYfORAfXmSY2Is" Comment="Path" Bounds="170,51,81,20" ShowValueBox="true" isIOBox="true" Value="$.stores[*]">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="97,86,76,26" Id="AVjSJmhje3BQL5TZwUvBna">
+            <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SelectTokens" />
+            </p:NodeReference>
+            <Pin Id="QeLwBDOTo7uO6YJEmIEDEy" Name="Input" Kind="StateInputPin" />
+            <Pin Id="UBSzTGekfGcLX2ZrDetQOU" Name="Path" Kind="InputPin" />
+            <Pin Id="OUfjPEM6URiNppad3W4Axb" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-163,105,71,26" Id="V2oPNrBpj8EMiIBHQTXdE2">
+            <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SelectToken" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="Brx5rZJ4kwoMht9n6so7k5" Name="Input" Kind="StateInputPin" />
+            <Pin Id="HuMKSUZloRgO5XpMUznfFW" Name="Path" Kind="InputPin" />
+            <Pin Id="H8tgMTs4cVmM7SXRNTU4Tn" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GOowseBMiDONxmnubU3Ysl" Comment="Path" Bounds="-96,38,81,20" ShowValueBox="true" isIOBox="true" Value="$.stores[0]">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="98,-24,70,19" Id="L4bG6eERCsbN6YNSI4tHRi">
+            <p:NodeReference LastCategoryFullName="JSON" LastSymbolSource="VL.JSON.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="JSON" />
+              <Choice Kind="ProcessAppFlag" Name="JSONReader" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="ILwDITQvz1BQEDjk6KO3NX" Name="File Path" Kind="InputPin" DefaultValue="..\..\..\wayray\data-processing\export\route_0.json">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="F00Gcf6D98oOE03eTfO9MD" Name="Encoding" Kind="InputPin" />
+            <Pin Id="FVSPZXitl2BLWUc32fZoSj" Name="Read" Kind="InputPin" />
+            <Pin Id="OAqO0pi1EgaMVD5sgfKUDB" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="UqZWpuo7rWmOtV9VVmCSjV" Comment="Read" Bounds="164,-101,35,32" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QGOTmLdNb5FLI7nr3CCqmB" Comment="File Path" Bounds="101,-162,293,23" ShowValueBox="true" isIOBox="true" Value="..\content\example.json">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="85,129,79,116" Id="Idvg9NSYV5kPhvy6alTY2u">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="UlQP1CjtvBANPpzLPSvz6K" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="UPVuVTCusUtLxu14MWEqcF" Bounds="99,135,-31,0" Alignment="Top" />
+            <ControlPoint Id="NXQYw8WhvC5MEgMDBlbHri" Bounds="99,239,-31,0" Alignment="Bottom" />
+            <Patch Id="BMAd3d7cRbRMzz1fgRT5F3" ManuallySortedPins="true">
+              <Patch Id="TJD6Y0uDK9OPgjBydw3WJr" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="HTpPIYhNo77P1vcpMySjiF" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="Ee5p1fEM1LEOxfdjaHGdbb" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="97,172,55,26" Id="GdhANaep6smLz1kvEd3Zs0">
+                <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ToString" />
+                  <FullNameCategoryReference ID="JSON.JToken" />
+                </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+                <Pin Id="GbFnGAH2UyaMnwecE4aHox" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Fk9Tb7jjcUAPGUcCPb07Sb" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Node Bounds="-164,165,55,26" Id="JWX011BJnVvLlLBa26QvGF">
+            <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToString" />
+              <FullNameCategoryReference ID="JSON.JToken" />
+            </p:NodeReference>
+            <Pin Id="MkIUTqX15dQLbuiVCladzc" Name="Input" Kind="StateInputPin" />
+            <Pin Id="PH9pVBA1nfuQHCbl0mDyKG" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SF6fi1MGdH0NuCRyVJYYdh" Comment="" Bounds="99,267,43,49" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Node Bounds="162,-59,54,19" Id="MtCtU3wYpwgOXObPJY6knq">
+            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+            </p:NodeReference>
+            <Pin Id="AYy5oDrEv1CNIJHqbUhUuD" Name="Simulate" Kind="InputPin" />
+            <Pin Id="HnZqiihkhCdOkkRid1P6Tf" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="386,28,76,26" Id="ISs4IKLy7KONd3MhhhPwpf">
+            <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SelectTokens" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="CpJvq7Mt57gLkGCgy5j2as" Name="Input" Kind="StateInputPin" />
+            <Pin Id="K3aoUW26o5GNsWf3y3ngzl" Name="Path" Kind="InputPin" />
+            <Pin Id="LbE2Mn9z1t1OzKjUzRSDqz" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="IHzYuWfpXSrPTX8hLqJ36a" Comment="Path" Bounds="459,-11,115,32" ShowValueBox="true" isIOBox="true" Value="$.manufacturers[*].products[*]">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="444,85,189,184" Id="DBTAZhycBYXLIR7KNoJQZW">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="AXZoEQPHJi3Qce8RxmGz51" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="ER1QN2H503FQMFo4orXjWR" Bounds="460,91,-31,0" Alignment="Top" />
+            <ControlPoint Id="TckU0UM71phN5KsLCF4Rqv" Bounds="462,263,-31,0" Alignment="Bottom" />
+            <ControlPoint Id="AunLXgxn0JsMQQX5Nrryvx" Bounds="542,263,-31,0" Alignment="Bottom" />
+            <Patch Id="LrnNNLe8myzQDwGRXjDobK" ManuallySortedPins="true">
+              <Patch Id="PFW9iblnSyxP9G4V6nVjzi" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="DQbfMMRize2O4P0h49L70R" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="BCpBEgKKCm0LKwKi8VdBhV" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="524,162,41,26" Id="TOLUrBasicfPiC1hiUXBWg">
+                <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Value" />
+                  <CategoryReference Kind="ClassType" Name="JToken" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="TMCWux3plZdPnxzlxEl1sC" Name="Input" Kind="StateInputPin" />
+                <Pin Id="HWYyEHoY6CLMGKUFHJF1fd" Name="Key" Kind="InputPin" />
+                <Pin Id="FVxEL2y7FtIPTs4tDJTFd3" Name="Result" Kind="OutputPin" />
+                <Pin Id="Jpu4WcvKZFINUp8qsz1sU2" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Pad Id="EXzYm2e6F3SMGSHzxoWp9J" Comment="Key" Bounds="562,141,20,15" ShowValueBox="true" isIOBox="true" Value="price">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="DNDnE27gshuL3nEIAbOit6" Bounds="527,240,20,15" ShowValueBox="true" isIOBox="true" Value="0">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Node Bounds="458,174,41,26" Id="D3fePHt9H3KMQ4bv7vhw6u">
+                <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Value" />
+                  <CategoryReference Kind="ClassType" Name="JToken" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+                <Pin Id="KXEFYxU4MFFQTgNbJ4Ml92" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CgcfeAjS2DTOEu3Vdxa9nE" Name="Key" Kind="InputPin" />
+                <Pin Id="ClhU5oNp1CuOuTEiKn28rI" Name="Result" Kind="OutputPin" />
+                <Pin Id="QtAitv11FhmO6uGNwvaBHY" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Pad Id="ChlfLETr9j7Pr9xTwpQFZP" Comment="Key" Bounds="496,114,20,15" ShowValueBox="true" isIOBox="true" Value="name">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="JL9ZW2KcQlPMqCtbEqLkCv" Bounds="460,238,20,15" ShowValueBox="true" isIOBox="true" Value="text">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:TypeAnnotation>
+              </Pad>
+            </Patch>
+          </Node>
+          <Pad Id="GFTlVVxq4zrLhmTqf2D1UA" Comment="" Bounds="427,313,46,65" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="Lgl3xKZWoNhOt9CuPeCtWd" Comment="" Bounds="543,309,38,66" ShowValueBox="true" isIOBox="true" Value="0" />
+          <Pad Id="JVwT2ooHtytPVdo7aJKnn0" Comment="" Bounds="-161,222,48,18" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="Um1OYb0Mr6OMyvBZYd9CDG" Name="Create" />
+        <Patch Id="VziAaSqfS6SPCTsChwC0bV" Name="Update" />
+        <ProcessDefinition Id="At5scwCKCnCO2rkOFB3b5e">
+          <Fragment Id="Svtk6ylp9tkQYu2DNUkA3i" Patch="Um1OYb0Mr6OMyvBZYd9CDG" Enabled="true" />
+          <Fragment Id="UlVXMyi1R7IOVvDGOrEdJp" Patch="VziAaSqfS6SPCTsChwC0bV" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="AAXUuHUZofIMxO4SyMZ7BR" Ids="UDprC2tcLYfORAfXmSY2Is,UBSzTGekfGcLX2ZrDetQOU" />
+        <Link Id="MTvJFLqJBfLPB1g4S3nKJj" Ids="GOowseBMiDONxmnubU3Ysl,HuMKSUZloRgO5XpMUznfFW" />
+        <Link Id="RIUJbUfVQQdLUidkavHl54" Ids="QGOTmLdNb5FLI7nr3CCqmB,ILwDITQvz1BQEDjk6KO3NX" />
+        <Link Id="E4X1p764JH4PLzvwxYHp3E" Ids="OAqO0pi1EgaMVD5sgfKUDB,QeLwBDOTo7uO6YJEmIEDEy" />
+        <Link Id="USwmpAq9nj9MWvmrDX1RtE" Ids="OUfjPEM6URiNppad3W4Axb,UPVuVTCusUtLxu14MWEqcF" />
+        <Link Id="K3qyxuDXMEtMFmr5fzA4zD" Ids="OAqO0pi1EgaMVD5sgfKUDB,Brx5rZJ4kwoMht9n6so7k5" />
+        <Link Id="Dwr6i3zrA9FN4ce3EASlEh" Ids="H8tgMTs4cVmM7SXRNTU4Tn,MkIUTqX15dQLbuiVCladzc" />
+        <Link Id="G6Mm6GqKAVfLZtuy3k74MG" Ids="NXQYw8WhvC5MEgMDBlbHri,SF6fi1MGdH0NuCRyVJYYdh" />
+        <Link Id="MWK6FeLjgj9OIVRNOlKqzv" Ids="UqZWpuo7rWmOtV9VVmCSjV,AYy5oDrEv1CNIJHqbUhUuD" />
+        <Link Id="IXVMAbw7yf2PNyLM7X7qvQ" Ids="HnZqiihkhCdOkkRid1P6Tf,FVSPZXitl2BLWUc32fZoSj" />
+        <Link Id="QNMZM2NL5htQXxiaBPLlqu" Ids="OAqO0pi1EgaMVD5sgfKUDB,CpJvq7Mt57gLkGCgy5j2as" />
+        <Link Id="Vt88KVZTZETOGGZwXk3Lid" Ids="IHzYuWfpXSrPTX8hLqJ36a,K3aoUW26o5GNsWf3y3ngzl" />
+        <Link Id="VlRLU0I9HOqOFZ0SavxTBn" Ids="LbE2Mn9z1t1OzKjUzRSDqz,ER1QN2H503FQMFo4orXjWR" />
+        <Link Id="AiVYJBanVzKM9vv8WFgRa5" Ids="EXzYm2e6F3SMGSHzxoWp9J,HWYyEHoY6CLMGKUFHJF1fd" />
+        <Link Id="HaJBtllmCEKNnoJpFNL4YR" Ids="FVxEL2y7FtIPTs4tDJTFd3,DNDnE27gshuL3nEIAbOit6" />
+        <Link Id="Lw21dBI27o8QHvcU0u2Mgj" Ids="ER1QN2H503FQMFo4orXjWR,KXEFYxU4MFFQTgNbJ4Ml92" />
+        <Link Id="SOgTMklKsfWOMUadklIdaI" Ids="ChlfLETr9j7Pr9xTwpQFZP,CgcfeAjS2DTOEu3Vdxa9nE" />
+        <Link Id="Ip1mtSRvFGpM74cnrd9mA6" Ids="ClhU5oNp1CuOuTEiKn28rI,JL9ZW2KcQlPMqCtbEqLkCv" />
+        <Link Id="KnGAJfE2urxM4Dt7qbFHup" Ids="ER1QN2H503FQMFo4orXjWR,TMCWux3plZdPnxzlxEl1sC" />
+        <Link Id="VHfkIAdoXeQNQp7g8LlYu9" Ids="JL9ZW2KcQlPMqCtbEqLkCv,TckU0UM71phN5KsLCF4Rqv" />
+        <Link Id="IZi3J0aVCxlPSVUNReF35A" Ids="TckU0UM71phN5KsLCF4Rqv,GFTlVVxq4zrLhmTqf2D1UA" />
+        <Link Id="U4KsXtynIZKPS3fM9aABvh" Ids="DNDnE27gshuL3nEIAbOit6,AunLXgxn0JsMQQX5Nrryvx" />
+        <Link Id="Q6qljYQPy4tPmIDKR8rNnU" Ids="AunLXgxn0JsMQQX5Nrryvx,Lgl3xKZWoNhOt9CuPeCtWd" />
+        <Link Id="BkjZbMtoD9nMWiGlbQ5X9Y" Ids="UPVuVTCusUtLxu14MWEqcF,GbFnGAH2UyaMnwecE4aHox" />
+        <Link Id="T7Yjm3bGgRCOOTu1kgIPVf" Ids="Fk9Tb7jjcUAPGUcCPb07Sb,NXQYw8WhvC5MEgMDBlbHri" />
+        <Link Id="V6bbHCoztj3LHQ9CwAY85U" Ids="PH9pVBA1nfuQHCbl0mDyKG,JVwT2ooHtytPVdo7aJKnn0" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="EB7LnH4ZQYdMxyymDBiyMJ" Location="VL.CoreLib" Version="2021.3.3" />
+  <NugetDependency Id="KYUpdPmwFnDLbUjmOuh561" Location="VL.JSON" Version="0.0.1" />
+</Document>

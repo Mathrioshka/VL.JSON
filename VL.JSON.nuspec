@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.JSON</id>
+    <version>0.0.1</version>
+    <authors>smakhtin</authors>
+    <projectUrl>https://github.com/mathrioshka/VL.JSON</projectUrl>
+    <repository type="git" url="https://github.com/mathrioshka/VL.JSON.git" branch="master"/>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Json.NET based JSON parser with JSON Path support</description>
+    <tags>json</tags>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon\nugeticon.png</icon> -->
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="13.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="*.vl" target="" exclude="" />
+    <file src="help\**" target="help\" exclude="" />
+    <file src="content\**" target="content\" exclude="" />
+    <!-- <file src="nugeticon.png" target="icon\" /> -->
+  </files>
+</package>
