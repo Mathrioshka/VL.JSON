@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="OD2B57pArCvPaI3vSiAAPm" LanguageVersion="2021.3.3.131" Version="0.128">
+<Document xmlns:p="property" Id="ICKIyASswytMWVH1WVIL9n" Summary="Json.NET based JSON parser with JSON Path support" Authors="smakhtin" Credits="Json.NET" LanguageVersion="2021.3.3.131" Version="0.128">
   <NugetDependency Id="JpUE1OnmrHmLFgZDHoC4PB" Location="VL.CoreLib" Version="2021.3.3" />
   <Patch Id="ObHZ9AMK1mKQW14OEgNthp">
     <Canvas Id="OH9Kp4VyfsiOXQzlwNyIYb" DefaultCategory="JSON" CanvasType="FullCategory">
@@ -44,7 +44,7 @@
               </Patch>
             </Node>
           </Canvas>
-          <ProcessDefinition Id="JDYGL06k3TVLd7IHwhs4je">
+          <ProcessDefinition Id="JDYGL06k3TVLd7IHwhs4je" IsHidden="true">
             <Fragment Id="BGOa4k5lNRQNMusyROoyoi" Patch="JAToZdIeM9aPkhj9dp9sYC" />
           </ProcessDefinition>
         </Patch>
@@ -254,7 +254,7 @@
                 <Link Id="SAIqxrprb45MwbwCo1xq8q" Ids="HkGNPIBqVH9NVIRZSnb2BH,UJXlb3Sc2DPP9mcSQrcgo9" IsHidden="true" />
                 <ControlPoint Id="FIEWL8xzCe8PFyPJ6qFLde" Bounds="-37,699" />
                 <Link Id="V788RhdFT6qNEZ7pgs4KlX" Ids="J2so4AxsRV3QZ7rCARvk9X,FIEWL8xzCe8PFyPJ6qFLde" />
-                <Pin Id="LTtY7wCjUA0QadmWo2ZdXH" Name="Output" Kind="OutputPin" Bounds="-38,661" />
+                <Pin Id="LTtY7wCjUA0QadmWo2ZdXH" Name="Output" Kind="OutputPin" Bounds="-38,661" Visibility="Hidden" />
                 <Link Id="QJOVEOWWbWTLka8mW7U3pP" Ids="FIEWL8xzCe8PFyPJ6qFLde,LTtY7wCjUA0QadmWo2ZdXH" IsHidden="true" />
               </Patch>
             </Node>

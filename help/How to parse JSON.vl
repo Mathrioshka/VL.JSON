@@ -159,7 +159,6 @@
                 <Pin Id="TMCWux3plZdPnxzlxEl1sC" Name="Input" Kind="StateInputPin" />
                 <Pin Id="HWYyEHoY6CLMGKUFHJF1fd" Name="Key" Kind="InputPin" />
                 <Pin Id="FVxEL2y7FtIPTs4tDJTFd3" Name="Result" Kind="OutputPin" />
-                <Pin Id="Jpu4WcvKZFINUp8qsz1sU2" Name="Output" Kind="OutputPin" />
               </Node>
               <Pad Id="EXzYm2e6F3SMGSHzxoWp9J" Comment="Key" Bounds="562,141,20,15" ShowValueBox="true" isIOBox="true" Value="price">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -182,7 +181,6 @@
                 <Pin Id="KXEFYxU4MFFQTgNbJ4Ml92" Name="Input" Kind="StateInputPin" />
                 <Pin Id="CgcfeAjS2DTOEu3Vdxa9nE" Name="Key" Kind="InputPin" />
                 <Pin Id="ClhU5oNp1CuOuTEiKn28rI" Name="Result" Kind="OutputPin" />
-                <Pin Id="QtAitv11FhmO6uGNwvaBHY" Name="Output" Kind="OutputPin" />
               </Node>
               <Pad Id="ChlfLETr9j7Pr9xTwpQFZP" Comment="Key" Bounds="496,114,20,15" ShowValueBox="true" isIOBox="true" Value="name">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
