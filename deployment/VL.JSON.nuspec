@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.JSON</id>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <authors>smakhtin</authors>
     <projectUrl>https://github.com/mathrioshka/VL.JSON</projectUrl>
     <repository type="git" url="https://github.com/mathrioshka/VL.JSON.git" branch="master"/>
