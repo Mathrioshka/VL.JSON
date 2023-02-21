@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Tfq6w0sAa0LL5il6HL1fXd" LanguageVersion="2021.3.3.131" Version="0.128">
-  <NugetDependency Id="OUZnQt4PmwkPhULr7Q81Ko" Location="VL.CoreLib" Version="2021.3.3" />
+<Document xmlns:p="property" Id="Tfq6w0sAa0LL5il6HL1fXd" LanguageVersion="2021.4.0.601" Version="0.128">
+  <NugetDependency Id="OUZnQt4PmwkPhULr7Q81Ko" Location="VL.CoreLib" Version="2021.4.0-0601-gdc72bfcab4" />
   <Patch Id="HcIvXw4VPcnOdmCK9mA6D3">
     <Canvas Id="UZ6mTqORQqDP9JnelBAb8y" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,12 +15,12 @@
       </p:NodeReference>
       <Patch Id="JubgJWoozwjLDcNAnC0JNm">
         <Canvas Id="U9cngumtNFnMDEjMPOAnnv" CanvasType="Group">
-          <Pad Id="UDprC2tcLYfORAfXmSY2Is" Comment="Path" Bounds="170,51,81,20" ShowValueBox="true" isIOBox="true" Value="$.stores[*]">
+          <Pad Id="UDprC2tcLYfORAfXmSY2Is" Comment="Path" Bounds="387,393,64,15" ShowValueBox="true" isIOBox="true" Value="$.stores[*]">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="97,86,76,26" Id="AVjSJmhje3BQL5TZwUvBna">
+          <Node Bounds="314,417,76,26" Id="AVjSJmhje3BQL5TZwUvBna">
             <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SelectTokens" />
@@ -29,7 +29,7 @@
             <Pin Id="UBSzTGekfGcLX2ZrDetQOU" Name="Path" Kind="InputPin" />
             <Pin Id="OUfjPEM6URiNppad3W4Axb" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-163,105,71,26" Id="V2oPNrBpj8EMiIBHQTXdE2">
+          <Node Bounds="54,417,71,26" Id="V2oPNrBpj8EMiIBHQTXdE2">
             <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SelectToken" />
@@ -39,12 +39,12 @@
             <Pin Id="HuMKSUZloRgO5XpMUznfFW" Name="Path" Kind="InputPin" />
             <Pin Id="H8tgMTs4cVmM7SXRNTU4Tn" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="GOowseBMiDONxmnubU3Ysl" Comment="Path" Bounds="-96,38,81,20" ShowValueBox="true" isIOBox="true" Value="$.stores[0]">
+          <Pad Id="GOowseBMiDONxmnubU3Ysl" Comment="Path" Bounds="122,393,71,15" ShowValueBox="true" isIOBox="true" Value="$.stores[0]">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="98,-24,70,19" Id="L4bG6eERCsbN6YNSI4tHRi">
+          <Node Bounds="315,307,70,19" Id="L4bG6eERCsbN6YNSI4tHRi">
             <p:NodeReference LastCategoryFullName="JSON" LastSymbolSource="VL.JSON.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="JSON" />
@@ -60,7 +60,7 @@
             <Pin Id="FVSPZXitl2BLWUc32fZoSj" Name="Read" Kind="InputPin" />
             <Pin Id="OAqO0pi1EgaMVD5sgfKUDB" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="UqZWpuo7rWmOtV9VVmCSjV" Comment="Read" Bounds="164,-101,35,32" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="UqZWpuo7rWmOtV9VVmCSjV" Comment="Read" Bounds="382,239,35,32" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -69,25 +69,25 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QGOTmLdNb5FLI7nr3CCqmB" Comment="File Path" Bounds="101,-162,293,23" ShowValueBox="true" isIOBox="true" Value="..\content\example.json">
+          <Pad Id="QGOTmLdNb5FLI7nr3CCqmB" Comment="File Path" Bounds="317,186,293,23" ShowValueBox="true" isIOBox="true" Value="..\content\example.json">
             <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="85,129,79,116" Id="Idvg9NSYV5kPhvy6alTY2u">
+          <Node Bounds="302,471,79,88" Id="Idvg9NSYV5kPhvy6alTY2u">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:NodeReference>
             <Pin Id="UlQP1CjtvBANPpzLPSvz6K" Name="Break" Kind="OutputPin" />
-            <ControlPoint Id="UPVuVTCusUtLxu14MWEqcF" Bounds="99,135,-31,0" Alignment="Top" />
-            <ControlPoint Id="NXQYw8WhvC5MEgMDBlbHri" Bounds="99,239,-31,0" Alignment="Bottom" />
+            <ControlPoint Id="UPVuVTCusUtLxu14MWEqcF" Bounds="316,477,-31,0" Alignment="Top" />
+            <ControlPoint Id="NXQYw8WhvC5MEgMDBlbHri" Bounds="316,553,-31,0" Alignment="Bottom" />
             <Patch Id="BMAd3d7cRbRMzz1fgRT5F3" ManuallySortedPins="true">
               <Patch Id="TJD6Y0uDK9OPgjBydw3WJr" Name="Create" ManuallySortedPins="true" />
               <Patch Id="HTpPIYhNo77P1vcpMySjiF" Name="Update" ManuallySortedPins="true" />
               <Patch Id="Ee5p1fEM1LEOxfdjaHGdbb" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="97,172,55,26" Id="GdhANaep6smLz1kvEd3Zs0">
+              <Node Bounds="314,503,55,26" Id="GdhANaep6smLz1kvEd3Zs0">
                 <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ToString" />
@@ -99,7 +99,7 @@
               </Node>
             </Patch>
           </Node>
-          <Node Bounds="-164,165,55,26" Id="JWX011BJnVvLlLBa26QvGF">
+          <Node Bounds="54,481,55,26" Id="JWX011BJnVvLlLBa26QvGF">
             <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ToString" />
@@ -108,12 +108,12 @@
             <Pin Id="MkIUTqX15dQLbuiVCladzc" Name="Input" Kind="StateInputPin" />
             <Pin Id="PH9pVBA1nfuQHCbl0mDyKG" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="SF6fi1MGdH0NuCRyVJYYdh" Comment="" Bounds="99,267,43,49" ShowValueBox="true" isIOBox="true">
+          <Pad Id="SF6fi1MGdH0NuCRyVJYYdh" Comment="" Bounds="316,586,94,49" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item></Item>
             </p:Value>
           </Pad>
-          <Node Bounds="162,-59,54,19" Id="MtCtU3wYpwgOXObPJY6knq">
+          <Node Bounds="380,276,54,19" Id="MtCtU3wYpwgOXObPJY6knq">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnOpen" />
@@ -121,7 +121,7 @@
             <Pin Id="AYy5oDrEv1CNIJHqbUhUuD" Name="Simulate" Kind="InputPin" />
             <Pin Id="HnZqiihkhCdOkkRid1P6Tf" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="386,28,76,26" Id="ISs4IKLy7KONd3MhhhPwpf">
+          <Node Bounds="592,420,76,26" Id="ISs4IKLy7KONd3MhhhPwpf">
             <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SelectTokens" />
@@ -131,26 +131,26 @@
             <Pin Id="K3aoUW26o5GNsWf3y3ngzl" Name="Path" Kind="InputPin" />
             <Pin Id="LbE2Mn9z1t1OzKjUzRSDqz" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="IHzYuWfpXSrPTX8hLqJ36a" Comment="Path" Bounds="459,-11,115,32" ShowValueBox="true" isIOBox="true" Value="$.manufacturers[*].products[*]">
+          <Pad Id="IHzYuWfpXSrPTX8hLqJ36a" Comment="Path" Bounds="665,381,115,32" ShowValueBox="true" isIOBox="true" Value="$.manufacturers[*].products[*]">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="444,85,189,184" Id="DBTAZhycBYXLIR7KNoJQZW">
+          <Node Bounds="578,477,243,188" Id="DBTAZhycBYXLIR7KNoJQZW">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:NodeReference>
             <Pin Id="AXZoEQPHJi3Qce8RxmGz51" Name="Break" Kind="OutputPin" />
-            <ControlPoint Id="ER1QN2H503FQMFo4orXjWR" Bounds="460,91,-31,0" Alignment="Top" />
-            <ControlPoint Id="TckU0UM71phN5KsLCF4Rqv" Bounds="462,263,-31,0" Alignment="Bottom" />
-            <ControlPoint Id="AunLXgxn0JsMQQX5Nrryvx" Bounds="542,263,-31,0" Alignment="Bottom" />
+            <ControlPoint Id="ER1QN2H503FQMFo4orXjWR" Bounds="594,484,-31,0" Alignment="Top" />
+            <ControlPoint Id="TckU0UM71phN5KsLCF4Rqv" Bounds="594,659,-31,0" Alignment="Bottom" />
+            <ControlPoint Id="AunLXgxn0JsMQQX5Nrryvx" Bounds="685,659,-31,0" Alignment="Bottom" />
             <Patch Id="LrnNNLe8myzQDwGRXjDobK" ManuallySortedPins="true">
               <Patch Id="PFW9iblnSyxP9G4V6nVjzi" Name="Create" ManuallySortedPins="true" />
               <Patch Id="DQbfMMRize2O4P0h49L70R" Name="Update" ManuallySortedPins="true" />
               <Patch Id="BCpBEgKKCm0LKwKi8VdBhV" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="524,162,41,26" Id="TOLUrBasicfPiC1hiUXBWg">
+              <Node Bounds="683,553,41,26" Id="TOLUrBasicfPiC1hiUXBWg">
                 <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Value" />
@@ -160,18 +160,18 @@
                 <Pin Id="HWYyEHoY6CLMGKUFHJF1fd" Name="Key" Kind="InputPin" />
                 <Pin Id="FVxEL2y7FtIPTs4tDJTFd3" Name="Result" Kind="OutputPin" />
               </Node>
-              <Pad Id="EXzYm2e6F3SMGSHzxoWp9J" Comment="Key" Bounds="562,141,20,15" ShowValueBox="true" isIOBox="true" Value="price">
+              <Pad Id="EXzYm2e6F3SMGSHzxoWp9J" Comment="Key" Bounds="721,508,49,15" ShowValueBox="true" isIOBox="true" Value="price">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Pad Id="DNDnE27gshuL3nEIAbOit6" Bounds="527,240,20,15" ShowValueBox="true" isIOBox="true" Value="0">
+              <Pad Id="DNDnE27gshuL3nEIAbOit6" Bounds="685,616,20,15" ShowValueBox="true" isIOBox="true" Value="0">
                 <p:TypeAnnotation>
                   <Choice Kind="TypeFlag" Name="Float32" />
                   <FullNameCategoryReference ID="Primitive" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="458,174,41,26" Id="D3fePHt9H3KMQ4bv7vhw6u">
+              <Node Bounds="592,553,41,26" Id="D3fePHt9H3KMQ4bv7vhw6u">
                 <p:NodeReference LastCategoryFullName="JSON.JToken" LastSymbolSource="VL.JSON.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Value" />
@@ -182,12 +182,12 @@
                 <Pin Id="CgcfeAjS2DTOEu3Vdxa9nE" Name="Key" Kind="InputPin" />
                 <Pin Id="ClhU5oNp1CuOuTEiKn28rI" Name="Result" Kind="OutputPin" />
               </Node>
-              <Pad Id="ChlfLETr9j7Pr9xTwpQFZP" Comment="Key" Bounds="496,114,20,15" ShowValueBox="true" isIOBox="true" Value="name">
+              <Pad Id="ChlfLETr9j7Pr9xTwpQFZP" Comment="Key" Bounds="630,508,44,15" ShowValueBox="true" isIOBox="true" Value="name">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Pad Id="JL9ZW2KcQlPMqCtbEqLkCv" Bounds="460,238,20,15" ShowValueBox="true" isIOBox="true" Value="text">
+              <Pad Id="JL9ZW2KcQlPMqCtbEqLkCv" Bounds="594,616,31,15" ShowValueBox="true" isIOBox="true" Value="text">
                 <p:TypeAnnotation>
                   <Choice Kind="TypeFlag" Name="String" />
                   <FullNameCategoryReference ID="Primitive" />
@@ -195,13 +195,13 @@
               </Pad>
             </Patch>
           </Node>
-          <Pad Id="GFTlVVxq4zrLhmTqf2D1UA" Comment="" Bounds="427,313,46,65" ShowValueBox="true" isIOBox="true">
+          <Pad Id="GFTlVVxq4zrLhmTqf2D1UA" Comment="" Bounds="594,689,46,65" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item></Item>
             </p:Value>
           </Pad>
-          <Pad Id="Lgl3xKZWoNhOt9CuPeCtWd" Comment="" Bounds="543,309,38,66" ShowValueBox="true" isIOBox="true" Value="0" />
-          <Pad Id="JVwT2ooHtytPVdo7aJKnn0" Comment="" Bounds="-161,222,48,18" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Lgl3xKZWoNhOt9CuPeCtWd" Comment="" Bounds="685,689,38,66" ShowValueBox="true" isIOBox="true" Value="0" />
+          <Pad Id="JVwT2ooHtytPVdo7aJKnn0" Comment="" Bounds="56,531,95,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="Um1OYb0Mr6OMyvBZYd9CDG" Name="Create" />
         <Patch Id="VziAaSqfS6SPCTsChwC0bV" Name="Update" />
@@ -238,6 +238,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EB7LnH4ZQYdMxyymDBiyMJ" Location="VL.CoreLib" Version="2021.3.3" />
+  <NugetDependency Id="EB7LnH4ZQYdMxyymDBiyMJ" Location="VL.CoreLib" Version="2021.4.0-0601-gdc72bfcab4" />
   <NugetDependency Id="KYUpdPmwFnDLbUjmOuh561" Location="VL.JSON" Version="0.0.1" />
 </Document>
